@@ -87,7 +87,7 @@ Config.PlateUseLabel    = 'Inserting plate...'
 
 
 -- Progress UI provider: 'ox_lib' (lib.progressCircle) or 'qbcore' (QBCore.Functions.Progressbar) or 'none'
-Config.ProgressProvider = 'ox_lib'
+Config.ProgressProvider = 'qbcore'
 
 -- Vest (carrier) progress settings
 Config.VestUseDuration   = 5000
