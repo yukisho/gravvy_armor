@@ -1,5 +1,2 @@
-client/*
-server/*
-
 !client/.gitkeep
 !server/.gitkeep
