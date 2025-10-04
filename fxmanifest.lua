@@ -1,8 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
-
-name 'gravvy_kevlar'
-description 'Kevlar carriers & plates'
+name 'gravvy_armor'
+description 'Armor carriers & plates'
 author 'Gravvy'
 version '1.0.0'
 lua54 'yes'
@@ -21,7 +20,3 @@ server_scripts {
 }
 
 dependency 'qb-inventory'
-
-escrow_ignore {
-    'config.lua'
-}
