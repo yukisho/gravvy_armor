@@ -206,7 +206,7 @@ lib.callback.register('gravvy_kevlar:repairProgress', function(itemName)
     return true
 end)
 
--- Damage monitor → send durability damage to server
+-- Damage monitor - send durability damage to server
 do
     CreateThread(function()
         while true do

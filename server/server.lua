@@ -355,7 +355,7 @@ for plateName, def in pairs(Config.Plates or {}) do
 end
 
 ---------------------------------------
--- Damage → durability scaling (unchanged)
+-- Damage - durability scaling
 ---------------------------------------
 local function clamp(val, minv, maxv)
     if minv and val < minv then val = minv end
