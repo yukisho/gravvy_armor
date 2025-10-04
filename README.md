@@ -1,4 +1,4 @@
-# gravvy\_kevlar – Config‑Only README (for non‑coders)
+# gravvy\_armor – Config‑Only README (for non‑coders)
 
 This guide explains **everything you can change by editing only `config.lua`**. You do **not** need access to the client or server scripts to:
 
