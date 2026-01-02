@@ -252,14 +252,6 @@ local function equippedCarrierStillPresent(items)
     return false
 end
 
-RegisterCommand('setarmor', function(source, args, raw)
-    local amt = tonumber(args[1]) or 0
-    amt = math.max(0, math.min(100, amt))
-    local ped = PlayerPedId()
-    SetPedArmour(ped, amt)
-    lastArmor = amt
-end, false)
-
 RegisterNetEvent('QBCore:Player:SetPlayerData', function(pd)
     local items = (pd and pd.items) or {}
     if equippedVest and equippedVest.carrierId then
