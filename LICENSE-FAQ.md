@@ -2,6 +2,7 @@
 
 This document provides plain-English clarification for the  
 Gravvy Non-Commercial Open Source License (GNOSL-1.2).
+See [LICENSE.md](LICENSE.md) for full terms.
 
 It explains how the license applies in real-world FiveM server and Tebex
 scenarios. This document does not replace the license text.
