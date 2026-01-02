@@ -2,6 +2,8 @@ Gravvy Non-Commercial Open Source License (GNOSL-1.2)
 
 Copyright (c) 2026 Gravvy
 
+For practical explanations and common use cases, see [LICENSE-FAQ.md](LICENSE-FAQ.md).
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to use,
 copy, modify, and distribute the Software for NON-COMMERCIAL purposes only,
