@@ -1,4 +1,4 @@
--- server.lua (drop-in)
+-- server.lua
 local QBCore = exports['qb-core']:GetCoreObject()
 
 ---------------------------------------
@@ -8,7 +8,7 @@ local lastPlateUseAny     = lastPlateUseAny or {}
 local usingPlate          = usingPlate or {}
 local equippedCarrier     = equippedCarrier or {}
 
--- Plate throttles (existing behavior)
+-- Plate throttles
 local lastPlateUseByItem  = lastPlateUseByItem or {}
 local plateRollWindow     = plateRollWindow or {}
 
