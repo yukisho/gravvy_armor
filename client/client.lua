@@ -78,6 +78,8 @@ local function PlayVestAnim(label, duration, dict, clip)
         StopAnimTask(ped, dict, clip, 1.0)
         RemoveAnimDict(dict)
     end
+
+    return ok
 end
 
 local function UnequipCarrier(withAnim)
@@ -88,8 +90,6 @@ local function UnequipCarrier(withAnim)
     local ped = PlayerPedId()
     local PlayerData = QBCore.Functions.GetPlayerData()
     equippedVest = nil
-    -- Do not modify armor here (armor persists until damage or plate use)
-    -- Just clear server-side equipped state
     local pedArmor = GetPedArmour(ped)
 
     if pedArmor ~= 0 then
