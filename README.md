@@ -1,5 +1,8 @@
 # gravvy\_armor – Config‑Only README (for non‑coders)
 
+This project is licensed under the GNOSL-1.2.  
+See [LICENSE.md](LICENSE.md) for full terms.
+
 This guide explains **everything you can change by editing only `config.lua`**. You do **not** need access to the client or server scripts to:
 
 * Add or tune **plate carriers** (with their own max durability)
