@@ -1,5 +1,9 @@
 Config = {}
 
+-- Created by Gravvy
+-- Licensed under GNOSL-1.2
+-- Non-commercial use only • Attribution required
+
 -- Plate carriers (names must match qb-core Shared.Items)
 -- Each carrier can define its own maxDurability and optional resistance scales.
 Config.PlateCarriers = {
