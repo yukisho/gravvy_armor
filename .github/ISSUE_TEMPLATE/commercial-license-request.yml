@@ -1,0 +1,91 @@
+name: Commercial License Request
+description: Request permission for commercial use of this resource
+title: "[Commercial License Request]: "
+labels:
+  - commercial-license
+  - license
+assignees:
+  - Gravvy
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This project is licensed under the **Gravvy Non-Commercial Open Source License (GNOSL)**.
+
+        Commercial use is not permitted under the default license.
+        Please review the following before submitting:
+        - LICENSE.md
+        - LICENSE-FAQ.md
+
+        Fill out all sections below to request a commercial license.
+
+  - type: input
+    id: requester
+    attributes:
+      label: Name or Organization
+      description: Individual or company requesting the license
+      placeholder: Your name or organization
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Preferred Contact Method
+      description: GitHub username or email
+      placeholder: GitHub username or email address
+    validations:
+      required: true
+
+  - type: textarea
+    id: project_description
+    attributes:
+      label: Project Description
+      description: Briefly describe your project or product
+      placeholder: What are you building?
+    validations:
+      required: true
+
+  - type: textarea
+    id: usage
+    attributes:
+      label: How This Resource Will Be Used
+      description: Explain how this resource will be integrated or distributed
+      placeholder: How will this resource be used?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: distribution
+    attributes:
+      label: Distribution Method
+      options:
+        - Sold directly
+        - Included in a paid bundle or framework
+        - Marketplace / Tebex distribution
+        - Client work / internal use
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope of Use
+      description: Public release, private use, client-only, etc.
+      placeholder: Describe the scope of usage
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I have read LICENSE.md
+          required: true
+        - label: I have read LICENSE-FAQ.md
+          required: true
+        - label: I understand that opening this issue does not grant commercial rights
+          required: true
