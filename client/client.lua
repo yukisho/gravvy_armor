@@ -150,7 +150,7 @@ RegisterNetEvent('gravvy_kevlar:client:useVest', function(item)
     exports['gravvy_kevlar']:useVest(item, item)
 end)
 
--- Absolute set/add armor (unchanged utility)
+-- Absolute set/add armor
 RegisterNetEvent('gravvy_kevlar:setArmor', function(value)
     local ped = PlayerPedId()
     local v = tonumber(value) or 0
@@ -175,20 +175,17 @@ lib.callback.register('gravvy_kevlar:plateProgress', function(plateName)
     local canCancel = (Config and Config.PlateCancelable) ~= false
     local freeze    = (Config and Config.PlateFreezePlayer) and true or false
     return PlayVestAnim((Config and Config.PlateUseLabel) or 'Inserting plate...', (Config and Config.PlateUseDuration) or 2500, Config.Animations.Plate.on.dict, Config.Animations.Plate.on.clip)
-    --return ShowProgress(label, duration, canCancel, freeze)
 end)
 
--- Repair progress callback (mirrors your plate progress pattern)
+-- Repair progress callback
 lib.callback.register('gravvy_kevlar:repairProgress', function(itemName)
-    -- Reuse your existing animation/progress helper if you have one:
     local label = (Config and Config.RepairUseLabel) or 'Repairing...'
     local dur   = (Config and Config.RepairUseDuration) or 4000
     if PlayVestAnim then
-        --weapons@first_person@aim_idle@p_m_zero@projectile@tear_gas@aim_trans@idle_to_idlerng : aim_trans_high
         return PlayVestAnim(label, dur, Config.Animations.Repair.on.dict, Config.Animations.Repair.on.clip) -- should return true/false
     end
 
-    -- Fallback if you don't have PlayVestAnim defined:
+    -- Fallback if PlayVestAnim isn't defined
     if GetResourceState('ox_lib') == 'started' then
         local success = lib.progressBar({
             duration = dur, label = label, useWhileDead = false, canCancel = Config.RepairCancelable ~= false,
