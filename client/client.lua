@@ -288,3 +288,8 @@ CreateThread(function()
         end
     end
 end)
+
+AddEventHandler('onClientResourceStart', function(resourceName)
+    if resourceName ~= GetCurrentResourceName() then return end
+    print("^2Resource:^0 " .. GetCurrentResourceName() .. " ^5Made by Gravvy^0")
+end)
