@@ -64,6 +64,7 @@ body:
         - Included in a paid bundle or framework
         - Marketplace / Tebex distribution
         - Client work / internal use
+        - Exclusivity License
         - Other
     validations:
       required: true
