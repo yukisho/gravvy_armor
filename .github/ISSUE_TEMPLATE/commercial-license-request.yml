@@ -11,12 +11,13 @@ body:
     attributes:
       value: |
         This project is licensed under the **Gravvy Non-Commercial Open Source License (GNOSL)**.
-
         Commercial use is not permitted under the default license.
-        Please review the following before submitting:
-        - [LICENSE.md](blob/main/LICENSE.md)
-        - [LICENSE-FAQ.md](blob/main/LICENSE-FAQ.md)
 
+        Please review the following before submitting:
+        - [LICENSE.md](https://github.com/yukisho/gravvy_armor/blob/main/LICENSE.md)
+        - [LICENSE-FAQ.md](https://github.com/yukisho/gravvy_armor/blob/main/LICENSE-FAQ.md)
+
+        Do not post sensitive or confidential information in this issue.
         Fill out all sections below to request a commercial license.
 
   - type: input
@@ -32,8 +33,8 @@ body:
     id: contact
     attributes:
       label: Preferred Contact Method
-      description: Email or discord name
-      placeholder: Email address or discord name
+      description: Email or Discord username (recommended for private follow-up)
+      placeholder: Email address or Discord username
     validations:
       required: true
 
