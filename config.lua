@@ -85,7 +85,7 @@ Config.Animations = {
     }
 }
 
--- Damage → durability model (server authoritative)
+-- Damage -> durability model (server authoritative)
 Config.DamageModel = {
     -- Global scale applied to all incoming durability loss
     globalScale = (Config.Defaults.GlobalScale or 1.0),
