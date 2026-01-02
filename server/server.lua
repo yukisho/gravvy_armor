@@ -341,7 +341,7 @@ local function UsePlate(src, plateName, plateDef, usedItem)
 
     local add = tonumber(plateDef and plateDef.armor or 0) or 0
     local newArmor = math.min(Config.Defaults.ArmorMaximum, curArmor + add)
-    Notify(src, ('You insert the plate and new armor is %d.'):format(newArmor), 'success', 2500)
+    Notify(src, 'Plate inserted.', 'success', 2500)
     SetCarrierArmor(src, carrierSlot, carrierItem.name, info, newArmor)
     TriggerClientEvent('gravvy_kevlar:setArmor', src, newArmor)
 
@@ -421,7 +421,6 @@ RegisterNetEvent('gravvy_kevlar:damageCarrier', function(carrierId, dmg)
 
     local loss = computeDurabilityLoss(it.name, dmgAmt, 'OTHER', 'UPPER', false)
     local new  = SetCarrierDurability(src, slot, it.name, info, cur - loss)
-    local newArmor = SetCarrierArmor(src, slot, it.name, info, (info.armor or 0) - dmgAmt)
 
     if new <= 0 then
         TriggerClientEvent('gravvy_kevlar:forceUnequip', src, 'Carrier destroyed')
