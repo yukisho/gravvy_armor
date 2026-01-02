@@ -111,11 +111,26 @@ You may not:
 
 ---
 
-## Can I use this resource in a commercial project?
+## Can I use this resource as part of a commercial product or service?
 
 No, not under this license.
 
-Commercial use requires explicit written permission
+This includes using the resource itself as:
+- A paid product
+- A paid service
+- A monetized script, framework, or bundle
+- A value-adding component of something being sold
+
+This restriction does NOT apply to:
+- Monetized FiveM servers
+- Paid applications or whitelisting
+- Donations, subscriptions, or Patreon support
+- General server or community monetization
+
+Running this resource on a server that earns money does not, by itself,
+constitute commercial use of the resource.
+
+Commercial use of the resource itself requires explicit written permission
 from the original author(s) and a separate commercial license.
 
 ---
